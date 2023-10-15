@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    //адаптация ширины контента и высоты
+    --index: calc(1vw + 1vh);
+    --color-header: #f4efec;
+    --color-text: #cdc6c3;
+    --gallery-gap: calc(var(--index) * 10);
+}
+
+@font-face {
+    font-family: releway-c;
+    src: url(../assets/fonts/raleway-regular.woff2);
+}
+
+@font-face {
+    font-family: outfit-c;
+    src: url(../assets/fonts/outfit-regular.woff2);
+}
+
+//Убираем подвисания при scrolle
+.content, .hero, .hero__main, .gallery > * {
+    will-change: transform;
+}
+body {
+    background-image: url(../assets/img/bg.jpg);
+    background-size: 3.1rem;
+    color: #fafafa;
+    font-family: releway-c;
+    //прокрутка по вертикали 
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 0 7vw;
+}
+
+@import './blocks/hero';
+@import './blocks/texts';
+@import './blocks/gallery';

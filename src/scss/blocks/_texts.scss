@@ -1,0 +1,25 @@
+h1,h2,h3,h4,h5,h6 {
+    font-family: outfit-c;
+}
+
+.title {
+    font-size: calc(var(--index) * 8);
+    position: absolute;
+    width: min-content;
+    bottom: 12vh;
+    line-height: .9;
+}
+
+.text__block {
+    color: var(--color-text);
+    position: relative;
+    &--h {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        color: var(--color-header);
+        margin-bottom: 1.5rem;
+    }
+    &--p {
+        line-height: 1.75;
+    }
+}

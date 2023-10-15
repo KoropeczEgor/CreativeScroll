@@ -1,0 +1,14 @@
+.hero {
+    &__img {
+        //применения адаптивности
+        width: calc(var(--index) * 36);
+
+        position: absolute;
+        left: 37vw;
+        top: 8vh;
+    }
+    &__main {
+        height: 100vh;
+    }
+    
+}
